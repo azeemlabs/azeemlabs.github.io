@@ -7,119 +7,114 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Alag se link kiya hua custom CSS file -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bg-slate-900 text-slate-100 transition-colors duration-300">
 
-    <!-- Header / Navbar -->
-    <header class="navbar sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <div class="logo-box font-bold text-xl tracking-wider text-white shadow-lg">AL</div>
-                <span class="text-xl font-bold tracking-tight text-white">Azeem <span class="text-indigo-400">Labs</span></span>
+    <!-- 1. AUTOMATIC HEADER YAHAN LOAD HOGA -->
+    <div id="header-loader"></div>
+
+    <!-- Main Page Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                Innovating The Future With <span class="bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">Smart Apps</span>
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10 dynamic-text">
+                Welcome to Azeem Labs. We build high-quality Android applications, share tech insights through our blogs, and document our development logs.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#apps" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg shadow-indigo-500/20 transition flex items-center space-x-2">
+                    <i class="fab fa-google-play"></i> <span>Our Apps</span>
+                </a>
+                <a href="#portfolio" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-6 py-3 rounded-lg transition border border-slate-700 flex items-center space-x-2 custom-btn">
+                    <i class="fas fa-user"></i> <span>Developer Portfolio</span>
+                </a>
             </div>
-            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
-                <a href="#" class="hover:text-indigo-400 transition">Home</a>
-                <a href="#blogs" class="hover:text-indigo-400 transition">Blogs</a>
-                <a href="#updates" class="hover:text-indigo-400 transition">App Updates</a>
-                <a href="#portfolio" class="hover:text-indigo-400 transition">Portfolio</a>
-            </nav>
-        </div>
-    </header>
+        </section>
 
-    <!-- Hero Section -->
-    <section class="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-            Innovating The Future With <span class="bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">Smart Apps</span>
-        </h1>
-        <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10">
-            Welcome to Azeem Labs. We build high-quality Android applications, share tech insights through our blogs, and document our development logs.
-        </p>
-        <div class="flex flex-wrap justify-center gap-4">
-            <a href="#apps" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg shadow-indigo-500/20 transition flex items-center space-x-2">
-                <i class="fab fa-google-play"></i> <span>Our Apps</span>
-            </a>
-            <a href="#portfolio" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-6 py-3 rounded-lg transition border border-slate-700 flex items-center space-x-2">
-                <i class="fas fa-user"></i> <span>Developer Portfolio</span>
-            </a>
-        </div>
-    </section>
+        <!-- Socials & Playstore Accounts -->
+        <!-- Socials & Playstore Accounts -->
+<section id="apps" class="section-bg border-y py-12 transition-colors duration-300">
+    <div class="max-w-4xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Play Store Card -->
+        <a href="https://play.google.com/store" target="_blank" class="social-card p-6 rounded-xl border transition group flex items-center space-x-4">
+            <div class="icon-wrapper w-12 h-12 rounded-lg flex items-center justify-center bg-green-500/10 text-green-500 text-2xl group-hover:bg-green-500 group-hover:text-white transition-all">
+                <i class="fab fa-google-play"></i>
+            </div>
+            <div>
+                <h4 class="font-bold card-title">Play Store</h4>
+                <p class="text-xs text-slate-400 dynamic-text">Download our apps</p>
+            </div>
+        </a>
 
-    <!-- Socials & Playstore Accounts -->
-    <section id="apps" class="bg-slate-900/50 border-y border-slate-800 py-12">
-        <div class="max-w-4xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <a href="https://play.google.com/store" target="_blank" class="social-card p-6 rounded-xl border border-slate-700 hover:border-indigo-500 transition group flex items-center space-x-4">
-                <div class="icon-wrapper bg-green-500/10 text-green-400 text-2xl group-hover:bg-green-500 group-hover:text-white transition">
-                    <i class="fab fa-google-play"></i>
-                </div>
-                <div>
-                    <h4 class="font-bold text-white">Play Store</h4>
-                    <p class="text-xs text-slate-400">Download our apps</p>
-                </div>
-            </a>
-            <a href="https://facebook.com" target="_blank" class="social-card p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition group flex items-center space-x-4">
-                <div class="icon-wrapper bg-blue-500/10 text-blue-400 text-2xl group-hover:bg-blue-500 group-hover:text-white transition">
-                    <i class="fab fa-facebook-f"></i>
-                </div>
-                <div>
-                    <h4 class="font-bold text-white">Facebook</h4>
-                    <p class="text-xs text-slate-400">Join our community</p>
-                </div>
-            </a>
-            <a href="https://youtube.com" target="_blank" class="social-card p-6 rounded-xl border border-slate-700 hover:border-red-500 transition group flex items-center space-x-4">
-                <div class="icon-wrapper bg-red-500/10 text-red-400 text-2xl group-hover:bg-red-500 group-hover:text-white transition">
-                    <i class="fab fa-youtube"></i>
-                </div>
-                <div>
-                    <h4 class="font-bold text-white">YouTube</h4>
-                    <p class="text-xs text-slate-400">Watch dev tutorials</p>
-                </div>
-            </a>
-        </div>
-    </section>
+        <!-- Facebook Card -->
+        <a href="https://facebook.com" target="_blank" class="social-card p-6 rounded-xl border transition group flex items-center space-x-4">
+            <div class="icon-wrapper w-12 h-12 rounded-lg flex items-center justify-center bg-blue-500/10 text-blue-500 text-2xl group-hover:bg-blue-500 group-hover:text-white transition-all">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+            <div>
+                <h4 class="font-bold card-title">Facebook</h4>
+                <p class="text-xs text-slate-400 dynamic-text">Join our community</p>
+            </div>
+        </a>
 
-    <!-- Blogs Section -->
-    <section id="blogs" class="max-w-6xl mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold mb-8 flex items-center space-x-3">
-            <span class="w-2 h-8 bg-indigo-500 rounded-full"></span>
-            <span>Latest Articles</span>
-        </h2>
-        <div id="blogs-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <p class="text-slate-400 italic">Loading blogs...</p>
-        </div>
-    </section>
+        <!-- YouTube Card -->
+        <a href="https://youtube.com" target="_blank" class="social-card p-6 rounded-xl border transition group flex items-center space-x-4">
+            <div class="icon-wrapper w-12 h-12 rounded-lg flex items-center justify-center bg-red-500/10 text-red-500 text-2xl group-hover:bg-red-500 group-hover:text-white transition-all">
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div>
+                <h4 class="font-bold card-title">YouTube</h4>
+                <p class="text-xs text-slate-400 dynamic-text">Watch dev tutorials</p>
+            </div>
+        </a>
 
-    <!-- App Updates / Release Logs Section -->
-    <section id="updates" class="bg-slate-900/40 border-t border-slate-800 py-16">
-        <div class="max-w-6xl mx-auto px-4">
+    </div>
+</section>
+        <!-- Blogs Section -->
+        <section id="blogs" class="max-w-6xl mx-auto px-4 py-16">
             <h2 class="text-3xl font-bold mb-8 flex items-center space-x-3">
-                <span class="w-2 h-8 bg-purple-500 rounded-full"></span>
-                <span>App Updates & Dev Logs</span>
+                <span class="w-2 h-8 bg-indigo-500 rounded-full"></span>
+                <span class="section-title">Latest Articles</span>
             </h2>
-            <div id="updates-container" class="space-y-6 max-w-3xl">
-                <p class="text-slate-400 italic">Loading release logs...</p>
+            <div id="blogs-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <p class="text-slate-400 italic">Loading blogs...</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Developer Portfolio Link Section -->
-    <section id="portfolio" class="max-w-4xl mx-auto px-4 py-16 text-center border-t border-slate-800">
-        <div class="portfolio-banner p-8 rounded-2xl border border-slate-700 shadow-xl">
-            <h3 class="text-2xl font-bold mb-3 text-white">Meet The Developer</h3>
-            <p class="text-slate-400 mb-6 max-w-xl mx-auto">Hi, I'm the engineer behind Azeem Labs. Check out my personal portfolio to see my skills, experience, and other standalone projects.</p>
-            <a href="https://yourportfolio.com" target="_blank" class="inline-flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-3 rounded-lg transition shadow-lg shadow-purple-500/20">
-                <span>Visit My Portfolio</span> <i class="fas fa-external-link-alt text-xs"></i>
-            </a>
-        </div>
-    </section>
+        <!-- App Updates Section -->
+        <section id="updates" class="section-bg border-t border-slate-800 py-16">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 flex items-center space-x-3">
+                    <span class="w-2 h-8 bg-purple-500 rounded-full"></span>
+                    <span class="section-title">App Updates & Dev Logs</span>
+                </h2>
+                <div id="updates-container" class="space-y-6 max-w-3xl">
+                    <p class="text-slate-400 italic">Loading release logs...</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer class="bg-slate-950 border-t border-slate-900 py-8 text-center text-sm text-slate-500">
-        <p>&copy; 2026 Azeem Labs. All rights reserved.</p>
-    </footer>
+        <!-- Developer Portfolio -->
+        <section id="portfolio" class="max-w-4xl mx-auto px-4 py-16 text-center border-t border-slate-800">
+            <div class="portfolio-banner p-8 rounded-2xl border border-slate-700 shadow-xl">
+                <h3 class="text-2xl font-bold mb-3">Meet The Developer</h3>
+                <p class="text-slate-400 mb-6 max-w-xl mx-auto dynamic-text">Hi, I'm the engineer behind Azeem Labs. Check out my personal portfolio to see my skills, experience, and other standalone projects.</p>
+                <a href="https://yourportfolio.com" target="_blank" class="inline-flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-3 rounded-lg transition shadow-lg shadow-purple-500/20">
+                    <span>Visit My Portfolio</span> <i class="fas fa-external-link-alt text-xs"></i>
+                </a>
+            </div>
+        </section>
+    </main>
 
-    <!-- Alag se attach kiya hua JavaScript file -->
+    <!-- 2. AUTOMATIC FOOTER YAHAN LOAD HOGA -->
+    <div id="footer-loader"></div>
+
+    <!-- Main Engine JavaScript File -->
     <script src="js/main.js"></script>
 </body>
 </html>

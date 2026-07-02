@@ -1,44 +1,64 @@
-/* Azeem Labs - Custom CSS Stylesheet */
+/* Azeem Labs - Custom Theme & Layout Style */
 
+/* Dark Mode (Default Colors) */
 body {
     background-color: #0f172a;
     color: #f8fafc;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.navbar {
-    background-color: #0f172a;
-    border-bottom: 1px solid #1e293b;
+.navbar-custom { 
+    background-color: #0f172a !important; 
+    border-bottom: 1px solid #1e293b; 
 }
+.social-card { background-color: #1e293b; }
+.section-bg { background-color: rgba(15, 23, 42, 0.5); }
+.portfolio-banner { background: linear-gradient(to right, #1e293b, #0f172a); }
+.card-title { color: #ffffff !important; }
+.nav-link { color: #aec1db !important; }
+.nav-link:hover { color: #818cf8 !important; }
+.brand-text { color: #ffffff !important; }
 
-.logo-box {
-    width: 40px;
-    height: 40px;
-    background-color: #4f46e5;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+/* Light Mode Override (Fixing Contrast Issues) */
+body.light-theme {
+    background-color: #f8fafc;
+    color: #0f172a;
 }
-
-.social-card {
-    background-color: #1e293b;
+body.light-theme .navbar-custom {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e2e8f0;
 }
-
-.icon-wrapper {
-    width: 48px;
-    height: 48px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body.light-theme .brand-text {
+    color: #0f172a !important; /* Azeem text ab dark dikhega light mode me */
 }
-
-.portfolio-banner {
-    background: linear-gradient(to right, #1e293b, #0f172a);
+body.light-theme .nav-link { 
+    color: #49576a !important; /* Menu Links dark slate color me dikhenge */
 }
+body.light-theme .nav-link:hover { 
+    color: #4f46e5 !important; /* Hover karne par premium indigo blue */
+}
+body.light-theme .dynamic-text { color: #475569; }
+body.light-theme .section-title { color: #1e293b; }
+body.light-theme .social-card {
+    background-color: #ffffff;
+    border-color: #e2e8f0;
+}
+body.light-theme .card-title { color: #1e293b !important; }
+body.light-theme .section-bg { background-color: #f1f5f9; }
+body.light-theme .portfolio-banner {
+    background: linear-gradient(to right, #e2e8f0, #ffffff);
+    border-color: #cbd5e1;
+}
+body.light-theme .custom-btn {
+    background-color: #e2e8f0;
+    color: #1e293b;
+    border-color: #cbd5e1;
+}
+body.light-theme .blog-card-custom {
+    background-color: #ffffff;
+    border-color: #e2e8f0;
+}
+body.light-theme .blog-card-custom h3 { color: #1e293b; }
 
+/* Utility Styles */
 .line-clamp-3 {
     display: -webkit-box;
     -webkit-line-clamp: 3;
