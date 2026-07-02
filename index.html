@@ -3,156 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Groups Community - Download</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    
+    <title>Azeem Labs - Official Website</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        :root {
-            --primary-grad: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
-            --bg-dark: #0f0c1b;
-            --card-glass: rgba(255, 255, 255, 0.06);
-            --card-border: rgba(255, 255, 255, 0.12);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-dark);
-            color: #f3f4f6;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        /* Background Glow */
-        body::before {
-            content: '';
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            background: var(--primary-grad);
-            filter: blur(120px);
-            border-radius: 50%;
-            opacity: 0.3;
-            z-index: -1;
-        }
-
-        .glass-card {
-            background: var(--card-glass);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid var(--card-border);
-            border-radius: 24px;
-            padding: 40px 30px;
-            text-align: center;
-            max-width: 400px;
-            width: 100%;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-        }
-
-        .app-icon {
-            width: 80px;
-            height: 80px;
-            border-radius: 20px;
-            background: #1e1b4b;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
-            color: #fff;
-            margin-bottom: 20px;
-            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
-        }
-
-        h1 {
-            font-size: 1.8rem;
-            font-weight: 800;
-            margin-bottom: 8px;
-            background: linear-gradient(135deg, #fff 60%, #c7d2fe 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        p {
-            color: #9ca3af;
-            font-size: 0.95rem;
-            margin-bottom: 30px;
-        }
-
-        .btn-list {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            padding: 14px 24px;
-            border-radius: 50px;
-            font-size: 1rem;
-            font-weight: 600;
-            text-decoration: none;
-            color: #fff;
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary {
-            background: var(--primary-grad);
-            box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
-        }
-
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid var(--card-border);
-        }
-
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateY(-2px);
-        }
-    </style>
+    <!-- Alag se link kiya hua custom CSS file -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="glass-card">
-        <div class="app-icon">
-            <i class="fab fa-whatsapp"></i>
+    <!-- Header / Navbar -->
+    <header class="navbar sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="logo-box font-bold text-xl tracking-wider text-white shadow-lg">AL</div>
+                <span class="text-xl font-bold tracking-tight text-white">Azeem <span class="text-indigo-400">Labs</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#" class="hover:text-indigo-400 transition">Home</a>
+                <a href="#blogs" class="hover:text-indigo-400 transition">Blogs</a>
+                <a href="#updates" class="hover:text-indigo-400 transition">App Updates</a>
+                <a href="#portfolio" class="hover:text-indigo-400 transition">Portfolio</a>
+            </nav>
         </div>
-        <h1>Groups Community</h1>
-        <p>Choose an option below to proceed</p>
-        
-        <div class="btn-list">
-            <a href="https://play.google.com/store/apps/details?id=com.groupscommunity.android" target="_blank" rel="noopener" class="btn btn-primary">
-                <i class="fab fa-google-play"></i> Download Application
-            </a>
-            
-            <a href="https://azeemlabs.github.io/portfolio" target="_blank" rel="noopener" class="btn btn-secondary">
-                <i class="fas fa-briefcase"></i> View Portfolio
-            </a>
-        </div>
-    </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+            Innovating The Future With <span class="bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">Smart Apps</span>
+        </h1>
+        <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10">
+            Welcome to Azeem Labs. We build high-quality Android applications, share tech insights through our blogs, and document our development logs.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#apps" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg shadow-indigo-500/20 transition flex items-center space-x-2">
+                <i class="fab fa-google-play"></i> <span>Our Apps</span>
+            </a>
+            <a href="#portfolio" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-6 py-3 rounded-lg transition border border-slate-700 flex items-center space-x-2">
+                <i class="fas fa-user"></i> <span>Developer Portfolio</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Socials & Playstore Accounts -->
+    <section id="apps" class="bg-slate-900/50 border-y border-slate-800 py-12">
+        <div class="max-w-4xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="https://play.google.com/store" target="_blank" class="social-card p-6 rounded-xl border border-slate-700 hover:border-indigo-500 transition group flex items-center space-x-4">
+                <div class="icon-wrapper bg-green-500/10 text-green-400 text-2xl group-hover:bg-green-500 group-hover:text-white transition">
+                    <i class="fab fa-google-play"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white">Play Store</h4>
+                    <p class="text-xs text-slate-400">Download our apps</p>
+                </div>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="social-card p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition group flex items-center space-x-4">
+                <div class="icon-wrapper bg-blue-500/10 text-blue-400 text-2xl group-hover:bg-blue-500 group-hover:text-white transition">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white">Facebook</h4>
+                    <p class="text-xs text-slate-400">Join our community</p>
+                </div>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="social-card p-6 rounded-xl border border-slate-700 hover:border-red-500 transition group flex items-center space-x-4">
+                <div class="icon-wrapper bg-red-500/10 text-red-400 text-2xl group-hover:bg-red-500 group-hover:text-white transition">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white">YouTube</h4>
+                    <p class="text-xs text-slate-400">Watch dev tutorials</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="max-w-6xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-8 flex items-center space-x-3">
+            <span class="w-2 h-8 bg-indigo-500 rounded-full"></span>
+            <span>Latest Articles</span>
+        </h2>
+        <div id="blogs-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <p class="text-slate-400 italic">Loading blogs...</p>
+        </div>
+    </section>
+
+    <!-- App Updates / Release Logs Section -->
+    <section id="updates" class="bg-slate-900/40 border-t border-slate-800 py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 flex items-center space-x-3">
+                <span class="w-2 h-8 bg-purple-500 rounded-full"></span>
+                <span>App Updates & Dev Logs</span>
+            </h2>
+            <div id="updates-container" class="space-y-6 max-w-3xl">
+                <p class="text-slate-400 italic">Loading release logs...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Portfolio Link Section -->
+    <section id="portfolio" class="max-w-4xl mx-auto px-4 py-16 text-center border-t border-slate-800">
+        <div class="portfolio-banner p-8 rounded-2xl border border-slate-700 shadow-xl">
+            <h3 class="text-2xl font-bold mb-3 text-white">Meet The Developer</h3>
+            <p class="text-slate-400 mb-6 max-w-xl mx-auto">Hi, I'm the engineer behind Azeem Labs. Check out my personal portfolio to see my skills, experience, and other standalone projects.</p>
+            <a href="https://yourportfolio.com" target="_blank" class="inline-flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-3 rounded-lg transition shadow-lg shadow-purple-500/20">
+                <span>Visit My Portfolio</span> <i class="fas fa-external-link-alt text-xs"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-8 text-center text-sm text-slate-500">
+        <p>&copy; 2026 Azeem Labs. All rights reserved.</p>
+    </footer>
+
+    <!-- Alag se attach kiya hua JavaScript file -->
+    <script src="js/main.js"></script>
 </body>
-  </html>
+</html>
