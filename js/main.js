@@ -35,7 +35,7 @@ function injectLayouts() {
         <header class="navbar-custom border-b sticky top-0 z-50 transition-colors duration-300">
             <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center font-bold text-xl tracking-wider text-white shadow-lg shadow-indigo-500/30">AL</div>
+                <img src="assets/logo.png" alt="Azeem Labs Logo" class="w-9 h-9 rounded-lg object-cover">
                     <span class="text-xl font-bold tracking-tight .nav-link">Azeem <span class="text-indigo-400">Labs</span></span>
                 </div>
                 
@@ -69,9 +69,9 @@ if (footerContainer) {
     // 1. Footer ke links ki list (Yahan se aap links control kar sakte hain)
     const footerLinks = [
         { name: "Home", url: "index.html" },
-        { name: "About Us", url: "#portfolio" },
-        { name: "Privacy Policy", url: "#" },
-        { name: "Terms of Service", url: "#" }
+        { name: "About Us", url: "about.html" },
+        { name: "Privacy Policy", url: "privacy.html" },
+        { name: "Terms of Service", url: "disclaimer.html" }
     ];
 
     // 2. Links ka HTML generate karne ka loop
