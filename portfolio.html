@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azeem - Official Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style Sheet Sheet for Light/Dark Toggle -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-900 text-slate-100 transition-colors duration-300">
+
+    <!-- 1. AUTOMATIC HEADER INJECTION NODE -->
+    <div id="header-loader"></div>
+
+    <!-- Main Wrapper Section -->
+    <main class="max-w-6xl mx-auto px-4 py-12 md:py-20">
+        
+        <!-- HERO PROFILE HEADER SECTION -->
+        <section class="portfolio-banner border border-slate-800 rounded-2xl p-6 md:p-10 mb-12 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
+            <div class="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                <!-- User Profile Image -->
+                <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-indigo-500 overflow-hidden shadow-lg shadow-indigo-500/20 flex-shrink-0">
+                    <img src="assets/profile.jpg" alt="Azeem" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <span class="bg-indigo-500/10 text-indigo-400 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-indigo-500/20">Full-Stack Developer</span>
+                    <h1 class="text-3xl md:text-5xl font-extrabold text-white mt-2 mb-3 tracking-tight card-title">AZEEM</h1>
+                    <p class="text-slate-400 max-w-xl text-sm md:text-base dynamic-text leading-relaxed">
+                        Skilled in Web Design & Development (HTML/CSS/JS), Android App Development, Graphic Design (Photoshop), and MS Office. Experienced in DIT, CIT, and QuickPay configurations.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TWO COLUMN DETAILS LAYOUT -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- LEFT PANEL: PERSONAL BIOMETRICS & SKILLS CORE -->
+            <div class="space-y-6 lg:col-span-1">
+                
+                <!-- Quick Contact Info -->
+                <div class="social-card p-6 rounded-xl border border-slate-800 space-y-4">
+                    <h3 class="text-lg font-bold text-white border-b border-slate-700/50 pb-2 mb-2 card-title">Contact Channels</h3>
+                    <div class="flex items-center space-x-3 text-sm">
+                        <i class="fas fa-phone text-indigo-400 w-5"></i>
+                        <span class="dynamic-text text-slate-300">+92 300 0991222</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-sm overflow-hidden">
+                        <i class="fas fa-envelope text-indigo-400 w-5"></i>
+                        <span class="dynamic-text text-slate-300 truncate">azeembakhsh04@gmail.com</span>
+                    </div>
+                    <div class="flex items-start space-x-3 text-sm">
+                        <i class="fas fa-map-marker-alt text-indigo-400 w-5 mt-0.5"></i>
+                        <span class="dynamic-text text-slate-300">Aftab Chowk, Sakran Road, Hub, Pakistan</span>
+                    </div>
+                </div>
+
+                <!-- Languages Matrix -->
+                <div class="social-card p-6 rounded-xl border border-slate-800">
+                    <h3 class="text-lg font-bold text-white border-b border-slate-700/50 pb-2 mb-4 card-title">Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-700/40 border border-slate-700 text-xs font-semibold px-3 py-1 rounded-md custom-btn">URDU</span>
+                        <span class="bg-slate-700/40 border border-slate-700 text-xs font-semibold px-3 py-1 rounded-md custom-btn">SINDHI</span>
+                        <span class="bg-slate-700/40 border border-slate-700 text-xs font-semibold px-3 py-1 rounded-md custom-btn">ENGLISH <span class="text-[10px] text-indigo-400 font-normal">(Inter)</span></span>
+                    </div>
+                </div>
+
+                <!-- Interactive Skill Progress Bars -->
+                <div class="social-card p-6 rounded-xl border border-slate-800 space-y-4">
+                    <h3 class="text-lg font-bold text-white border-b border-slate-700/50 pb-2 card-title">Skills Metrics</h3>
+                    
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="card-title">Web Design & Dev</span>
+                            <span class="text-indigo-400">80%</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-indigo-500 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="card-title">MS Office Tools</span>
+                            <span class="text-indigo-400">86%</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-purple-500 h-2 rounded-full" style="width: 86%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="card-title">Android Dev (Basic)</span>
+                            <span class="text-indigo-400">70%</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-indigo-500 h-2 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="card-title">Graphic Design (PS)</span>
+                            <span class="text-indigo-400">50%</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-purple-500 h-2 rounded-full" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT PANEL: TIMELINES (EDUCATION & PROFESSIONAL CERTIFICATES) -->
+            <div class="lg:col-span-2 space-y-8">
+                
+                <!-- Timeline Section 1: Professional Technical Certificates -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-6 flex items-center space-x-3 card-title">
+                        <i class="fas fa-graduation-cap text-indigo-400"></i>
+                        <span>Technical Certifications</span>
+                    </h2>
+                    <div class="space-y-6 border-l border-slate-800 ml-3 pl-6">
+                        
+                        <!-- Web Dev -->
+                        <div class="relative">
+                            <div class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[31px] top-1.5 shadow shadow-indigo-500"></div>
+                            <span class="text-xs text-indigo-400 font-bold bg-indigo-500/10 border border-indigo-500/20 px-2 py-0.5 rounded">2023 - 2025</span>
+                            <h4 class="text-lg font-bold text-white mt-2 card-title">Web Designing & Development</h4>
+                            <p class="text-xs text-slate-400 font-medium dynamic-text mt-0.5">TTC Technical Training Centre (Feb 2025)</p>
+                            <p class="text-sm text-slate-400 dynamic-text mt-2 leading-relaxed">Gained comprehensive practical experience in building modern front-end responsive nodes and data architectures using HTML, CSS, JavaScript, and dynamic application configurations.</p>
+                        </div>
+
+                        <!-- CIT -->
+                        <div class="relative">
+                            <div class="absolute w-3 h-3 bg-purple-500 rounded-full -left-[31px] top-1.5 shadow shadow-purple-500"></div>
+                            <span class="text-xs text-purple-400 font-bold bg-purple-500/10 border border-purple-500/20 px-2 py-0.5 rounded">2022 - 2023</span>
+                            <h4 class="text-lg font-bold text-white mt-2 card-title">CIT (Certificate in Information Technology)</h4>
+                            <p class="text-xs text-slate-400 font-medium dynamic-text mt-0.5">TTC Technical Training Centre</p>
+                            <p class="text-sm text-slate-400 dynamic-text mt-2 leading-relaxed">Developed core competence in handling operations system architectures, hardware networking matrices, practical software debugging, and server troubleshooting rules.</p>
+                        </div>
+
+                        <!-- DIT -->
+                        <div class="relative">
+                            <div class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[31px] top-1.5 shadow shadow-indigo-500"></div>
+                            <span class="text-xs text-indigo-400 font-bold bg-indigo-500/10 border border-indigo-500/20 px-2 py-0.5 rounded">2018 - 2019</span>
+                            <h4 class="text-lg font-bold text-white mt-2 card-title">DIT (Diploma in Information Technology)</h4>
+                            <p class="text-xs text-slate-400 font-medium dynamic-text mt-0.5">Educrafters Academy</p>
+                            <p class="text-sm text-slate-400 dynamic-text mt-2 leading-relaxed">Acquired core foundations in office automation systems, corporate computing basics, hardware configuration, and graphic template designing via Adobe Photoshop elements.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Timeline Section 2: General Education Background -->
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-6 flex items-center space-x-3 card-title">
+                        <i class="fas fa-book-reader text-purple-400"></i>
+                        <span>Academic Education Timeline</span>
+                    </h2>
+                    <div class="space-y-6 border-l border-slate-800 ml-3 pl-6">
+                        
+                        <!-- Intermediate -->
+                        <div class="relative">
+                            <div class="absolute w-3 h-3 bg-purple-500 rounded-full -left-[31px] top-1.5"></div>
+                            <span class="text-xs text-slate-400 font-semibold dynamic-text">2022 - 2024</span>
+                            <h4 class="text-base font-bold text-white mt-1 card-title">Intermediate Studies</h4>
+                            <p class="text-xs text-slate-500 dynamic-text">Government Degree College</p>
+                        </div>
+
+                        <!-- Matriculation -->
+                        <div class="relative">
+                            <div class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[31px] top-1.5"></div>
+                            <span class="text-xs text-slate-400 font-semibold dynamic-text">2020 - 2022</span>
+                            <h4 class="text-base font-bold text-white mt-1 card-title">Matriculation (9th & 10th Grade)</h4>
+                            <p class="text-xs text-slate-500 dynamic-text">Government Boys High School</p>
+                        </div>
+
+                        <!-- Primary -->
+                        <div class="relative">
+                            <div class="absolute w-3 h-3 bg-purple-500 rounded-full -left-[31px] top-1.5"></div>
+                            <span class="text-xs text-slate-400 font-semibold dynamic-text">Primary Core</span>
+                            <h4 class="text-base font-bold text-white mt-1 card-title">Primary School Graduation</h4>
+                            <p class="text-xs text-slate-500 dynamic-text">Ideal Public High School, Hub</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- 2. AUTOMATIC FOOTER INJECTION NODE -->
+    <div id="footer-loader"></div>
+
+    <!-- Main JavaScript Architecture Module Script Link -->
+    <script src="js/main.js"></script>
+</body>
+</html>
