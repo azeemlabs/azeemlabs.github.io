@@ -22,16 +22,13 @@ body.light-theme {
     background-color: #f8fafc;
     color: #0f172a;
 }
+
 body.light-theme .navbar-custom {
     background-color: #ffffff !important;
     border-bottom: 1px solid #e2e8f0;
 }
-body.light-theme .brand-text {
-    color: #0f172a !important; /* Azeem text ab dark dikhega light mode me */
-}
-body.light-theme .nav-link { 
-    color: #49576a !important; /* Menu Links dark slate color me dikhenge */
-}
+
+
 body.light-theme .nav-link:hover { 
     color: #4f46e5 !important; /* Hover karne par premium indigo blue */
 }

@@ -15,10 +15,10 @@ function generateMenuItems(isMobile = false) {
     menuItems.forEach(item => {
         if (isMobile) {
             // Mobile Menu Links Layout
-            htmlOutput += `<a href="${item.url}" class="block py-2 px-3 rounded-md text-slate-300 hover:bg-slate-800 hover:text-white transition">${item.name}</a>`;
+            htmlOutput += `<a href="${item.url}" class="block py-2 px-3 rounded-md text-slate-500 hover:bg-slate-800 hover:text-white transition">${item.name}</a>`;
         } else {
             // Desktop Menu Links Layout
-            htmlOutput += `<a href="${item.url}" class="hover:text-indigo-400 transition">${item.name}</a>`;
+            htmlOutput += `<a href="${item.url}" class="hover:text-indigo-300 transition">${item.name}</a>`;
         }
     });
     
@@ -49,7 +49,7 @@ function injectLayouts() {
                     <button id="theme-toggle-btn" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 focus:outline-none text-slate-300 transition">
                         <i id="theme-icon" class="fas fa-moon"></i>
                     </button>
-                    <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-400 hover:text-white focus:outline-none text-xl">
+                    <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-400 hover:text-indigo-400 focus:outline-none text-xl">
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
@@ -73,7 +73,7 @@ if (footerContainer) {
 
     let footerLinksHTML = "";
     footerLinks.forEach(link => {
-        footerLinksHTML += `<a href="${link.url}" target="_blank" class="nav-link text-xs hover:text-indigo-400 transition mx-3 my-1">${link.name}</a>`;
+        footerLinksHTML += `<a href="${link.url}" target="_blank" class="nav-link text-xs text-slate-400 hover:text-indigo-400 transition mx-3 my-1">${link.name}</a>`;
     });
 
     // 3. Premium Footer Design Injection
@@ -96,7 +96,7 @@ if (footerContainer) {
             <div class="w-16 h-[1px] bg-slate-800 mx-auto mb-6"></div>
 
             <!-- Bottom Section: Copyright Notice -->
-            <p class="text-xs text-slate-500">&copy; 2026 Azeem Labs. All rights reserved.</p>
+            <p class="text-copyright text-xs text-slate-400">&copy; 2026 Azeem Labs. All rights reserved.</p>
         </div>
     </footer>
     `;
