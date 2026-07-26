@@ -63,10 +63,7 @@ function injectLayouts() {
         `;
     }
 
-  // js/main.js ke andar 'injectLayouts' function me footer wale hisse ko isse replace karein:
-
 if (footerContainer) {
-    // 1. Footer ke links ki list (Yahan se aap links control kar sakte hain)
     const footerLinks = [
         { name: "Home", url: "index.html" },
         { name: "About Us", url: "about.html" },
@@ -74,7 +71,6 @@ if (footerContainer) {
         { name: "Terms of Service", url: "disclaimer.html" }
     ];
 
-    // 2. Links ka HTML generate karne ka loop
     let footerLinksHTML = "";
     footerLinks.forEach(link => {
         footerLinksHTML += `<a href="${link.url}" target="_blank" class="nav-link text-xs hover:text-indigo-400 transition mx-3 my-1">${link.name}</a>`;
@@ -121,7 +117,6 @@ function setupInteractiveFeatures() {
         });
     }
 
-   // js/main.js ke andar is condition ko check karlein ya replace mardein:
 if (localStorage.getItem('theme') === 'light') {
     document.body.classList.add('light-theme');
     if (themeIcon) themeIcon.className = 'fas fa-sun';
@@ -155,26 +150,26 @@ async function loadBlogs() {
     if (!container) return; 
 
     try {
-        const response = await fetch('blogs/blogs_list.json');
+        const response = await fetch('res/blogs/blogs_list.json');
         const blogFiles = await response.json();
         container.innerHTML = '';
 
         for (const filename of blogFiles) {
             try {
-                const res = await fetch(`blogs/${filename}.json`);
+                const res = await fetch(`res/blogs/${filename}.json`);
                 const blog = await res.json();
                 
                 const card = document.createElement('div');
                 card.className = 'bg-slate-800 rounded-xl border border-slate-700 overflow-hidden shadow-lg blog-card-custom';
                 card.innerHTML = `
                     <div class="h-48 bg-slate-700 flex items-center justify-center text-slate-500 relative">
-                        <i class="fas fa-image text-4xl"></i>
-                        <span class="absolute bottom-3 left-3 bg-indigo-600 text-white text-xs px-2 py-1 rounded">${blog.date}</span>
+                    <img src="${blog.image}" alt="${blog.title}" class="w-full h-full object-cover" />
+                    <span class="absolute bottom-3 left-3 bg-indigo-600 text-white text-xs px-2 py-1 rounded">${blog.date}</span>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-3 text-white">${blog.title}</h3>
-                        <p class="text-slate-400 text-sm mb-4 line-clamp-3 dynamic-text">${blog.content}</p>
-                        <a href="#" class="text-indigo-400 hover:text-indigo-300 font-medium text-sm inline-flex items-center space-x-1">
+                        <p class="text-slate-400 text-sm mb-4 line-clamp-3 dynamic-text">${blog.summary}</p>
+                        <a href="${blog.url}" class="text-indigo-400 hover:text-indigo-300 font-medium text-sm inline-flex items-center space-x-1">
                             <span>Read Full Post</span> <i class="fas fa-arrow-right text-xs"></i>
                         </a>
                     </div>
@@ -196,13 +191,13 @@ async function loadUpdates() {
     if (!container) return;
 
     try {
-        const response = await fetch('updates/updates_list.json');
+        const response = await fetch('res/updates/updates_list.json');
         const updateFiles = await response.json();
         container.innerHTML = '';
 
         for (const filename of updateFiles) {
             try {
-                const res = await fetch(`updates/${filename}.json`);
+                const res = await fetch(`res/updates/${filename}.json`);
                 const log = await res.json();
                 
                 const logBox = document.createElement('div');
