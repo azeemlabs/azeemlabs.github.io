@@ -3,9 +3,9 @@
 // 1. Menu ki data list (Yahan aap aasani se naye pages add kar sakte hain)
 const menuItems = [
     { name: "Home", url: "index.html" },
-    { name: "Blogs", url: "#blogs" },
-    { name: "App Updates", url: "#updates" },
-    { name: "Portfolio", url: "#portfolio" }
+    { name: "Blogs", url: "/#blogs" },
+    { name: "App Updates", url: "/#updates" },
+    { name: "Portfolio", url: "/#portfolio" }
 ];
 
 // 2. Menu links generate karne ka function (Desktop aur Mobile dono ke liye)
