@@ -73,7 +73,7 @@ if (footerContainer) {
 
     let footerLinksHTML = "";
     footerLinks.forEach(link => {
-        footerLinksHTML += `<a href="${link.url}" target="_blank" class="nav-link text-xs text-slate-400 hover:text-indigo-400 transition mx-3 my-1">${link.name}</a>`;
+        footerLinksHTML += `<a href="${link.url}" class="nav-link text-xs text-slate-400 hover:text-indigo-400 transition mx-3 my-1">${link.name}</a>`;
     });
 
     // 3. Premium Footer Design Injection
